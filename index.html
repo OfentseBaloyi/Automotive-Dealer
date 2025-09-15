@@ -6,11 +6,8 @@
   <link rel="stylesheet" href="styles.css">
   <title>Automotive Dealer</title>
 
- 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  
 </head>
 <body>
 
@@ -18,29 +15,41 @@
   <nav class="navbar navbar-expand-lg bg-white border-bottom">
     <div class="container">
       <a class="navbar-brand fw-bold text-danger" href="#">Automotive Dealer-<i class="fa-solid fa-car"></i></a>
-      <div class="d-flex ms-auto">
-        <a href="#" class="btn btn-outline-danger me-2">SELL A CAR</a>
-        <a href="#" class="btn btn-danger">BUY A CAR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="d-flex ms-auto flex-column flex-lg-row">
+          <a href="#" class="btn btn-outline-danger me-lg-2 mb-2 mb-lg-0">SELL A CAR</a>
+          <a href="#" class="btn btn-danger">BUY A CAR</a>
+        </div>
       </div>
     </div>
   </nav>
 
 
-  <header class="hero">
+  <header class="hero position-relative">
     <div class="hero-overlay"></div>
-    <div class="hero-content container">
+    <div class="hero-content container text-center py-5">
       <h1 class="fw-bold mb-4">Find new & used cars for sale</h1>
 
-
-      <div class="search-bar shadow">
-        <select class="form-select w-auto">
-          <option>Cars</option>
-          <option>Bikes</option>
-          <option>Leisure</option>
-          <option>Commercial</option>
-        </select>
-        <input type="text" placeholder="Enter Make, Model and Variant">
-        <a href="#" class="btn btn-danger">Search</a>
+      <div class="search-bar shadow p-3 rounded bg-white">
+        <div class="row g-2">
+          <div class="col-12 col-md-auto">
+            <select class="form-select w-100">
+              <option>Cars</option>
+              <option>Bikes</option>
+              <option>Leisure</option>
+              <option>Commercial</option>
+            </select>
+          </div>
+          <div class="col-12 col-md">
+            <input type="text" class="form-control" placeholder="Enter Make and Model">
+          </div>
+          <div class="col-12 col-md-auto">
+            <a href="#" class="btn btn-danger w-100">Search</a>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -52,7 +61,7 @@
       <div class="row g-4">
         <div class="col-12 col-sm-6 col-md-3">
           <div class="card car-card shadow-sm">
-            <img src="2020-Volkswagen-Polo-Vivo-14-Trendline-5-dr.avif" class="card-img-top" alt="Car 1">
+            <img src="2020-Volkswagen-Polo-Vivo-14-Trendline-5-dr.avif" class="card-img-top img-fluid" alt="Car 1">
             <div class="card-body">
               <h6 class="card-title">2020 VW Polo Vivo</h6>
               <p class="card-text text-muted">R159,000</p>
@@ -61,7 +70,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-3">
           <div class="card car-card shadow-sm">
-            <img src="2019-Silver-Toyota-Corolla-16-Prestige.jpg" class="card-img-top" alt="Car 2">
+            <img src="2019-Silver-Toyota-Corolla-16-Prestige.jpg" class="card-img-top img-fluid" alt="Car 2">
             <div class="card-body">
               <h6 class="card-title">2019 Toyota Corolla</h6>
               <p class="card-text text-muted">R189,900</p>
@@ -70,7 +79,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-3">
           <div class="card car-card shadow-sm">
-            <img src="332463_20230821123810-1.jpg" class="card-img-top" alt="Car 3">
+            <img src="332463_20230821123810-1.jpg" class="card-img-top img-fluid" alt="Car 3">
             <div class="card-body">
               <h6 class="card-title">2021 BMW 3 Series</h6>
               <p class="card-text text-muted">R349,000</p>
@@ -79,7 +88,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-3">
           <div class="card car-card shadow-sm">
-            <img src="671dd5c1801803.87195016.jpg" class="card-img-top" alt="Car 4">
+            <img src="671dd5c1801803.87195016.jpg" class="card-img-top img-fluid" alt="Car 4">
             <div class="card-body">
               <h6 class="card-title">2018 Ford Ranger</h6>
               <p class="card-text text-muted">R299,500</p>
@@ -90,12 +99,13 @@
     </div>
   </section>
 
-    <section class="py-5">
+ 
+  <section class="py-5">
     <div class="container">
       <div class="row g-4">
         <div class="col-12 col-sm-6 col-md-3">
           <div class="card car-card shadow-sm">
-            <img src="MERCEDES-BENZ_Vito-Tourer-2020_main.jpg" class="card-img-top" alt="Car 1">
+            <img src="MERCEDES-BENZ_Vito-Tourer-2020_main.jpg" class="card-img-top img-fluid" alt="Car 1">
             <div class="card-body">
               <h6 class="card-title">2020 Mercedes Benz V300d</h6>
               <p class="card-text text-muted">R980,000</p>
@@ -104,7 +114,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-3">
           <div class="card car-card shadow-sm">
-            <img src="picanto.webp" class="card-img-top" alt="Car 2">
+            <img src="picanto.webp" class="card-img-top img-fluid" alt="Car 2">
             <div class="card-body">
               <h6 class="card-title">2020 Kia Picanto 1.0</h6>
               <p class="card-text text-muted">R158,900</p>
@@ -113,7 +123,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-3">
           <div class="card car-card shadow-sm">
-            <img src="2014_jaguar_f-type-v8-s-convertible_img_1389-5-72595.webp" class="card-img-top" alt="Car 3">
+            <img src="2014_jaguar_f-type-v8-s-convertible_img_1389-5-72595.webp" class="card-img-top img-fluid" alt="Car 3">
             <div class="card-body">
               <h6 class="card-title">2014 Jaguar F-Type</h6>
               <p class="card-text text-muted"><del>R689,000</del> R649,000</p>
@@ -122,7 +132,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-3">
           <div class="card car-card shadow-sm">
-            <img src="2019-Silver-Volkswagen-Golf-GTI-20-TSI-GTI-DSG-8323780-31-2268x1701.jpg" class="card-img-top" alt="Car 4">
+            <img src="2019-Silver-Volkswagen-Golf-GTI-20-TSI-GTI-DSG-8323780-31-2268x1701.jpg" class="card-img-top img-fluid" alt="Car 4">
             <div class="card-body">
               <h6 class="card-title">2019 Golf 7 GTI</h6>
               <p class="card-text text-muted">R345,500</p>
@@ -134,70 +144,68 @@
   </section>
 
 
-<footer class="bg-dark text-light py-5">
-  <div class="container">
-    <div class="row justify-content-center">
-      
-     
-      <div class="col-lg-6 mb-4">
-        <h3 class="fw-bold">Buy within your budget</h3>
-        <p class="text-light">
-          Tell us how much you can afford, and we'll match you with quality cars at that price.
-        </p>
-        <img src="Mercidez-Viano-Car-Hire-3.jpg" alt="Car" class="img-fluid rounded">
-      </div>
-      
-      
-      <div class="col-lg-6">
-        <div class="card shadow border-0">
-          <div class="card-body p-4">
-            <span class="badge bg-warning text-dark mb-2">New</span>
-            <h4 class="fw-bold">R 0</h4>
-            <small class="text-muted d-block mb-3">Estimated buying power <br> Based on 10.5% Interest</small>
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row justify-content-center g-4">
+        <div class="col-12 col-lg-6">
+          <h3 class="fw-bold">Buy within your budget</h3>
+          <p class="text-light">
+            Tell us how much you can afford, and we'll match you with quality cars at that price.
+          </p>
+          <img src="Mercidez-Viano-Car-Hire-3.jpg" alt="Car" class="img-fluid rounded">
+        </div>
 
-            <div class="row g-3">
-              <div class="col-6">
-                <label class="form-label small">Monthly budget</label>
-                <input type="text" class="form-control" placeholder="R 0">
+        <div class="col-12 col-lg-6">
+          <div class="card shadow border-0">
+            <div class="card-body p-4">
+              <span class="badge bg-warning text-dark mb-2">New</span>
+              <h4 class="fw-bold">R 0</h4>
+              <small class="text-muted d-block mb-3">Estimated buying power <br> Based on 10.5% Interest</small>
+
+              <div class="row g-3">
+                <div class="col-6">
+                  <label class="form-label small">Monthly budget</label>
+                  <input type="text" class="form-control" placeholder="R 0">
+                </div>
+                <div class="col-6">
+                  <label class="form-label small">Loan term</label>
+                  <select class="form-select">
+                    <option>72 months</option>
+                    <option>60 months</option>
+                    <option>48 months</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <label class="form-label small">Trade-in amount</label>
+                  <input type="text" class="form-control" placeholder="R 0">
+                </div>
+                <div class="col-6">
+                  <label class="form-label small">Deposit amount</label>
+                  <input type="text" class="form-control" value="R 35 000">
+                </div>
+                <div class="col-6">
+                  <label class="form-label small">Interest rate</label>
+                  <input type="text" class="form-control" value="10.50%">
+                </div>
+                <div class="col-6">
+                  <label class="form-label small">Credit status</label>
+                  <select class="form-select">
+                    <option>Good credit</option>
+                    <option>Average credit</option>
+                    <option>Poor credit</option>
+                  </select>
+                </div>
               </div>
-              <div class="col-6">
-                <label class="form-label small">Loan term</label>
-                <select class="form-select">
-                  <option>72 months</option>
-                  <option>60 months</option>
-                  <option>48 months</option>
-                </select>
-              </div>
-              <div class="col-6">
-                <label class="form-label small">Trade-in amount</label>
-                <input type="text" class="form-control" placeholder="R 0">
-              </div>
-              <div class="col-6">
-                <label class="form-label small">Deposit amount</label>
-                <input type="text" class="form-control" value="R 35 000">
-              </div>
-              <div class="col-6">
-                <label class="form-label small">Interest rate</label>
-                <input type="text" class="form-control" value="10.50%">
-              </div>
-              <div class="col-6">
-                <label class="form-label small">Credit status</label>
-                <select class="form-select">
-                  <option>Good credit</option>
-                  <option>Average credit</option>
-                  <option>Poor credit</option>
-                </select>
-              </div>
+
+              <button class="btn btn-danger w-100 mt-4">See your matches</button>
             </div>
-
-            <button class="btn btn-danger w-100 mt-4">See your matches</button>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
-</footer>
+  </footer>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
